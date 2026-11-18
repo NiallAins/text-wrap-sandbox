@@ -1,0 +1,135 @@
+body {
+    color: #fff;
+    background: #20202a;
+    overflow-x: hidden;
+    padding: 40px 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 80rem;
+    margin: 0 auto;
+    gap: 30px;
+}
+.grid__inputs {
+    grid-column: 1;
+}
+.grid__controls {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.grid__controls-row {
+    margin-top: 14px;
+    display: flex;
+    gap: 10px;
+}
+.grid__controls-inputs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.grid__para {
+    grid-column: 2;
+}
+
+.inserts {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 14px;
+}
+
+#controls, #para, #text, .inserts__label {
+    font-size: 16px;
+    font-family: Helvetica, Arial;
+}
+
+button {
+    padding: 4px 8px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    outline: 1px solid #20202a;
+    color: inherit;
+    background: transparent;
+    cursor: pointer;
+    align-self: start;
+}
+
+.switch {
+    margin-top: 24px;
+}
+
+.label {
+    flex: 0 0 100px;
+}
+
+.label, .input {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+input {
+    visibility: hidden;
+}
+
+label {
+    padding: 3px 6px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    text-align: center;
+}
+
+input:checked + label {
+    border-radius: 4px;
+    border-color: #08f9;
+}
+
+i {
+    font-size: 14px;
+}
+
+a {
+    font-size: 12px;
+    color: #08f;
+    text-decoration: none;
+}
+
+#para {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 20px;
+    background: #08f9;
+}
+
+#text {
+    display: block;
+    width: 450px;
+    height: 150px;
+    border: 2px solid #08f9;
+    border-radius: 4px;
+    padding: 10px;
+    color: inherit;
+    background: inherit;
+    max-width: 80vw;
+}
+
+@media (max-width: 840px) {
+    body {
+        padding: 20px 16px;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid__para {
+        order: 10;
+    }
+}
