@@ -59,9 +59,9 @@ if (opts) {
 
 text.value = `In Wicklow lies Newtownmountkennedy, sometimes spelt Newtown-mount-kennedy. 
 <br/>
-Soft hyphen characters can be used to get Newtown&shy;mount&shy;kennedy.
+Soft hyphens only appear before a break in Newtown&shy;mount&shy;kennedy.
 <br/>
-This&nbsp;message&nbsp;won't&nbsp;break`;
+And&nbsp;this&nbsp;line&nbsp;won't&nbsp;break`;
 text.onkeyup = () => para.innerHTML = text.value;
 text.onkeyup();
 
