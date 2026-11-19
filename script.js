@@ -24,7 +24,7 @@ const
         },
         {
             name: 'whiteSpace',
-            options: ['unset', 'normal', 'nowrap'],
+            options: ['unset', 'pre', 'pre-wrap', 'pre-line', 'normal', 'nowrap'],
             value: 0
         },
         {
