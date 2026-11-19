@@ -9,12 +9,12 @@ const
         },
         {
             name: 'height',
-            options: ['unset','120px', 'auto', 'min-content', 'max-content', 'fit-content'],
+            options: ['unset', '120px', 'auto', 'min-content', 'max-content', 'fit-content'],
             value: 1
         },
         {
             name: 'overflow',
-            options: ['unset', 'visible', 'hidden', 'auto'],
+            options: ['unset', 'visible', 'hidden', 'scroll', 'auto'],
             value: 1
         },
         {
